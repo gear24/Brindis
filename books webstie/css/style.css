@@ -89,32 +89,38 @@ section {
 }
 
 .header .header-1 {
-    background: #fff;
+    background: #e1ede9
+;
     padding: 1.5rem 9%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
+    /* justify-content: space-between;*/
 }
 
 .header .header-1 .logo {
     font-size: 2.5rem;
     font-weight: bolder;
     color: var(--black);
+    padding: 20px;
+    
 }
-
+/*
+esto es para cacmbiar el color del logo remoto!!!!!!!!!!!!!!! red
 .header .header-1 .logo i {
     color: var(--green);
 }
-
+*/
 .header .header-1 .search-form {
     width: 50rem;
     height: 5rem;
     border: var(--border);
     overflow: hidden;
-    background: #fff;
+    background:#bad6cd;
     display: flex;
     align-items: center;
     border-radius: .5rem;
+    
 }
 
 .header .header-1 .search-form input {
@@ -122,6 +128,7 @@ section {
     padding: 0 1.2rem;
     height: 100%;
     width: 100%;
+    background:#bad6cd;
     text-transform: none;
     color: var(--black);
 }
@@ -137,6 +144,8 @@ section {
     color: var(--green);
 }
 
+
+/*          */
 .header .header-1 .icons div,
 .header .header-1 .icons a {
     font-size: 2.5rem;
@@ -440,7 +449,7 @@ section {
 .featured .featured-slider .box .content .price span {
     font-size: 1.5rem;
     color: var(--light-color);
-    text-decoration: line-through;
+     /*text-decoration: line-through; */
 }
 
 .swiper-button-next,
@@ -462,77 +471,8 @@ section {
     background: var(--black);
     color: #fff;
 }
-
-.newsletter {
-    background: url(../image/letter-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.newsletter form {
-    max-width: 45rem;
-    margin-left: auto;
-    text-align: center;
-    padding: 5rem 0;
-}
-
-.newsletter form h3 {
-    font-size: 2.2rem;
-    color: #fff;
-    padding-bottom: .7rem;
-    font-weight: normal;
-}
-
-.newsletter form .box {
-    width: 100%;
-    margin: .7rem 0;
-    padding: 1rem 1.2rem;
-    font-size: 1.6rem;
-    color: var(--black);
-    border-radius: .5rem;
-    text-transform: none;
-}
-
-.arrivals .arrivals-slider .box {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
-    border: var(--border);
-    margin: 1rem 0;
-}
-
-.arrivals .arrivals-slider .box:hover {
-    border: var(--border-hover);
-}
-
-.arrivals .arrivals-slider .box .image img {
-    height: 15rem;
-}
-
-.arrivals .arrivals-slider .box .content h3 {
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.arrivals .arrivals-slider .box .content .price {
-    font-size: 2.2rem;
-    color: var(--black);
-    padding-bottom: .5rem;
-}
-
-.arrivals .arrivals-slider .box .content .price span {
-    font-size: 1.5rem;
-    color: var(--light-color);
-    text-decoration: line-through;
-}
-
-.arrivals .arrivals-slider .box .content .stars i {
-    font-size: 1.5rem;
-    color: var(--green);
-}
-
+/* 
+Esto es para el coso de la tabla posible */
 .deal {
     background: #f3f3f3;
     display: flex;
@@ -571,152 +511,11 @@ section {
     line-height: 2;
 }
 
-.reviews .reviews-slider .box {
-    border: var(--border);
-    padding: 2rem;
-    text-align: center;
-    margin: 2rem 0;
-}
 
-.reviews .reviews-slider .box:hover {
-    border: var(--border-hover);
-}
 
-.reviews .reviews-slider .box img {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
+ 
 
-.reviews .reviews-slider .box h3 {
-    color: var(--black);
-    font-size: 2.2rem;
-    padding: .5rem 0;
-}
 
-.reviews .reviews-slider .box p {
-    color: var(--light-color);
-    font-size: 1.4rem;
-    padding: 1rem 0;
-    line-height: 2;
-}
-
-.reviews .reviews-slider .box .stars {
-    padding-top: .5rem;
-}
-
-.reviews .reviews-slider .box .stars i {
-    font-size: 1.7rem;
-    color: var(--green);
-}
-
-.blogs .blogs-slider .box {
-    margin: 2rem 0;
-    border: var(--border);
-}
-
-.blogs .blogs-slider .box:hover {
-    border: var(--border-hover);
-}
-
-.blogs .blogs-slider .box .image {
-    height: 25rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-.blogs .blogs-slider .box .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.blogs .blogs-slider .box:hover .image img {
-    transform: scale(1.1);
-}
-
-.blogs .blogs-slider .box .content {
-    padding: 1.5rem;
-}
-
-.blogs .blogs-slider .box .content h3 {
-    font-size: 2.2rem;
-    color: var(--black);
-}
-
-.blogs .blogs-slider .box .content p {
-    font-size: 1.4rem;
-    color: var(--light-color);
-    padding: 1rem 0;
-    line-height: 2;
-}
-
-.footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-}
-
-.footer .box-container .box h3 {
-    font-size: 2.2rem;
-    color: var(--black);
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a {
-    display: block;
-    font-size: 1.4rem;
-    color: var(--light-color);
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a i {
-    color: var(--green);
-    padding-right: .5rem;
-}
-
-.footer .box-container .box a:hover i {
-    padding-right: 2rem;
-}
-
-.footer .box-container .box .map {
-    width: 100%;
-}
-
-.footer .share {
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.footer .share a {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color: #fff;
-    background: var(--green);
-    margin: 0 .3rem;
-    border-radius: 50%;
-}
-
-.footer .share a:hover {
-    background: var(--black);
-}
-
-.footer .credit {
-    border-top: var(--border);
-    margin-top: 2rem;
-    padding: 0 1rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color: var(--light-color);
-    text-align: center;
-}
-
-.footer .credit span {
-    color: var(--green);
-}
 
 .loader-container {
     position: fixed;
@@ -738,14 +537,6 @@ section {
 .loader-container img {
     height: 10rem;
 }
-
-
-
-
-
-
-
-
 
 
 /* media queries  */
@@ -813,14 +604,6 @@ section {
         font-size: 3.5rem;
     }
 
-    .newsletter {
-        background-position: right;
-    }
-
-    .newsletter form {
-        margin-left: 0;
-        max-width: 100%;
-    }
 
 }
 
@@ -831,3 +614,4 @@ section {
     }
 
 }
+
